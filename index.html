@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodieHub | Online Food Ordering</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background: #fffaf5;
+        color: #292929;
+      }
+      header {
+        background: #e84d24;
+        color: white;
+        padding: 22px 8%;
+      }
+      header h1 {
+        font-size: 30px;
+      }
+      header p {
+        margin-top: 7px;
+      }
+      nav {
+        background: #b93617;
+        padding: 12px 8%;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin-right: 22px;
+      }
+      .hero {
+        padding: 35px 8%;
+        background: #ffe4d4;
+      }
+      .hero h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+      }
+      .offer {
+        color: #b93617;
+        font-weight: bold;
+        margin-top: 12px;
+      }
+      main {
+        padding: 28px 8%;
+      }
+      h2.section-title {
+        margin: 24px 0 15px;
+      }
+      .restaurant {
+        background: white;
+        padding: 18px;
+        border-radius: 10px;
+      }
+      .menu {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        gap: 18px;
+      }
+      .item {
+        background: white;
+        border: 1px solid #f0d9cc;
+        padding: 18px;
+        border-radius: 10px;
+      }
+      .item h3 {
+        margin-bottom: 9px;
+      }
+      .price {
+        color: #c53c1b;
+        font-weight: bold;
+        margin: 10px 0;
+      }
+      .available {
+        color: #16803c;
+        font-weight: bold;
+      }
+      .unavailable {
+        color: #c62828;
+        font-weight: bold;
+      }
+      .tag {
+        display: inline-block;
+        background: #fff0c2;
+        padding: 5px 9px;
+        border-radius: 5px;
+      }
+      footer {
+        margin-top: 30px;
+        background: #292929;
+        color: white;
+        padding: 20px 8%;
+      }
+      @media (max-width: 600px) {
+        header,
+        nav,
+        .hero,
+        main,
+        footer {
+          padding-left: 5%;
+          padding-right: 5%;
+        }
+        nav a {
+          display: inline-block;
+          margin: 5px 12px 5px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>FoodieHub</h1>
+      <p>Your favourite food, delivered fresh to your door.</p>
+    </header>
+
+    <nav>
+      <a href="#restaurant">Restaurant</a>
+      <a href="#categories">Categories</a>
+      <a href="#menu">Menu</a>
+      <a href="#offers">Offers</a>
+    </nav>
+
+    <section class="hero">
+      <h2>Good Food. Great Mood.</h2>
+      <p>
+        Discover delicious meals prepared by your favourite local restaurant.
+      </p>
+      <p class="offer" id="offers">
+        Today's offer: Get 20% off orders above ₹499 with code FOOD20.
+      </p>
+    </section>
+
+    <main>
+      <section id="restaurant" class="restaurant">
+        <h2>Restaurant Details</h2>
+        <p><strong>Name:</strong> Spice Garden Restaurant</p>
+        <p><strong>Cuisine:</strong> Indian, Chinese and Continental</p>
+        <p><strong>Rating:</strong> 4.5 / 5</p>
+        <p><strong>Delivery time:</strong> 25–40 minutes</p>
+        <p><strong>Opening hours:</strong> 10:00 AM – 11:00 PM</p>
+      </section>
+
+      <section id="categories">
+        <h2 class="section-title">Food Categories</h2>
+        <p>
+          🍕 Pizza &nbsp; 🍔 Burgers &nbsp; 🍛 Indian Meals &nbsp; 🍰 Desserts
+          &nbsp; 🥤 Beverages
+        </p>
+      </section>
+
+      <section id="menu">
+        <h2 class="section-title">Popular Menu</h2>
+        <div class="menu">
+          <article class="item">
+            <h3>Margherita Pizza</h3>
+            <p>Classic cheese pizza with fresh tomato sauce.</p>
+            <p class="price">₹249</p>
+            <p class="available">Available</p>
+          </article>
+          <article class="item">
+            <h3>Veg Burger</h3>
+            <p>Crispy vegetable patty with lettuce and sauce.</p>
+            <p class="price">₹149</p>
+            <p class="available">Available</p>
+          </article>
+          <article class="item">
+            <h3>Paneer Butter Masala</h3>
+            <p>Paneer cooked in a rich, creamy tomato gravy.</p>
+            <p class="price">₹279</p>
+            <p class="available">Available</p>
+          </article>
+          <article class="item">
+            <h3>Chocolate Brownie</h3>
+            <p>Warm chocolate brownie served as dessert.</p>
+            <p class="price">₹99</p>
+            <p class="unavailable">Currently unavailable</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Why Choose FoodieHub?</h2>
+        <p>
+          Fresh ingredients, transparent prices, reliable delivery and exciting
+          offers.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>FoodieHub — Online Food Ordering Portal</p>
+      <p>Demonstration application for CI/CD and blue-green deployment.</p>
+    </footer>
+  </body>
+</html>
